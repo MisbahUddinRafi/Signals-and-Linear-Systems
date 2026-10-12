@@ -191,70 +191,6 @@ class LTISystem:
 
 
 def test(): 
-    # DiscreteSignal Class testing --------------------------
-    # x = DiscreteSignal(-2, 3) 
-    # print(x.start_time, x.end_time)
-    # print(x.t) 
-    # print(x.values) 
-    # print(len(x)) 
-    # print(x.times()) 
-    # print(x.get_value_at_time(0)) 
-
-    # x.set_value_at_time(0, 1.5) 
-    # x.set_value_at_time(1, 2.5) 
-    # x.set_value_at_time(2, 3.5) 
-    # print(x.get_value_at_time(0)) 
-
-    # y = x.shift(3) 
-    # print(y.t) 
-    # print(y.values) 
-
-    # y.set_value_at_time(4, 6)
-    # y.set_value_at_time(5, 3) 
-    # y.set_value_at_time(6, 2) 
-    # print() 
-    # print(y.values) 
-    # print(x.values)
-    # z = x.add(y) 
-    # print(z.values) 
-
-    # print()
-    # y = DiscreteSignal(-4, 5)
-    # y.set_value_at_time(-4, 5) 
-    # y.set_value_at_time(0, 10) 
-    # y.set_value_at_time(1, -5) 
-    # y.set_value_at_time(2, -10) 
-    # y.set_value_at_time(3, 3) 
-
-    # print(y.values) 
-    # print(x.values) 
-    # z = x.add(y) 
-    # print(z.values) 
-    # print() 
-
-    # y = DiscreteSignal(0, 5) 
-    # y.set_value_at_time(0, 1) 
-    # y.set_value_at_time(2, 5)
-    # y.set_value_at_time(4, 6) 
-
-    # m = y.multiply(0.5) 
-    # n = m.multiply(4)  
-    # print(y.values)  
-    # print(m.values) 
-    # print(n.values) 
-
-    # print() 
-
-    # s = m.nonzero_samples() 
-    # print(m.values) 
-    # print(s) 
-    # print(n.values) 
-    # print(n.nonzero_samples())
-
-
-    # ax = m.plot("my plot", save_path="./myplot")  
-
-
     # LTISystem class testing -----------------------------------
     h = DiscreteSignal(0, 2) 
     h.set_value_at_time(0, 1) 
@@ -283,11 +219,7 @@ def test():
 
 
     print() 
-    # for n in range(7): 
-    #     result = s.get_contributions_at_time(in_sig, n) 
-    #     print(result, s.output_at_time(in_sig, n)) 
-    # 
-
+    
     result2 = s.output(in_sig) 
     print(result2.values)  
 
